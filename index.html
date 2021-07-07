@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function changeColor(name, state) {
+            state === 1 ? name.style.background = "#111" : state === 2 ? name.style.background = "yellow" : name.style.background = "red";
+        }
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        table {
+            color: white;
+            border: solid 1px white;
+            border-collapse: collapse;
+            margin: 5px;
+        }
+        td {
+            border: solid 1px white;
+            padding: 5px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        .dim-1, .dim-2, .dim-3 {
+            width: 33%;
+            float: left;
+        }
+        .dim-1 {
+            clear: left;
+        }
+        .dim-2 {
+            float: left;
+        }
+        .tables-1 {
+            margin: 10px;
+        }
+        .buttons-1 {
+            margin: 10px;
+            width: 50%;
+        }
+        .button {
+            background: blue;
+            margin: 5px 0;
+            padding: 5px;
+            width: 90%;
+            border-top: solid 3px white;
+            border-bottom: solid 3px white;
+            float: left;
+            clear: right;
+            text-align: center;
+        }
+        .table-3, .table-4, .table-5 {
+            float: right;
+        }
+        .table-6 {
+            float: right;
+        }
+        .buttons-2 {
+            float: right;
+            clear: both;
+            margin: 100px 10px;
+            width: 50%;
+        }
+        .buttons-2 .button {
+            float: right;
+        }
+    </style>
+</head>
+<body onload="changeColor(document.body, 1);">
+<div class="dim-1">
+    <div class="tables-1">
+        <table id="table-1">
+            <tr>
+                <td>Общее содержание горючих газов, ppm</td>
+                <td>9999</td>
+            </tr>
+            <tr>
+                <td>Влагосодержание, ppm</td>
+                <td>9999</td>
+            </tr>
+        </table>
+        <table id="table-2">
+            <tr>
+                <td>Токр. среды, &#176;С</td>
+                <td>9999</td>
+            </tr>
+            <tr>
+                <td>Твсм(АКМ), &#176;С</td>
+                <td>9999</td>
+            </tr>
+            <tr>
+                <td>Тобм ВН, &#176;С</td>
+                <td>9999</td>
+            </tr>
+            <tr>
+                <td>Тобм НН, &#176;С</td>
+                <td>9999</td>
+            </tr>
+        </table>
+    </div>
+    <div class="buttons-1">
+        <a href="#" class="button">Расширительный бак</a>
+        <a href="#" class="button">Защиты (от АСУ ТП)</a>
+        <a href="#" class="button">Текущий режим</a>
+        <a href="#" class="button">Энергетические параметры</a>
+        <a href="#" class="button">Воздухоосущитель</a>
+    </div>
+</div>
+<div class="dim-2">
+    <div class="tables-2">
+        <table class="table-3">
+            <tr>
+                <td>&#916;tg &#948;, %</td>
+                <td>9999</td>
+            </tr>
+            <tr>
+                <td>&#916;C, %</td>
+                <td>9999</td>
+            </tr>
+        </table>
+        <table class="table-4">
+            <tr>
+                <td>&#916;tg &#948;, %</td>
+                <td>9999</td>
+            </tr>
+            <tr>
+                <td>&#916;C, %</td>
+                <td>9999</td>
+            </tr>
+        </table>
+        <table class="table-5">
+            <tr>
+                <td>&#916;tg &#948;, %</td>
+                <td>9999</td>
+            </tr>
+            <tr>
+                <td>&#916;C, %</td>
+                <td>9999</td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="dim-3">
+   <table class="table-6">
+       <tr>
+           <td>Iвн ф.В, А</td>
+           <td>9999</td>
+       </tr>
+       <tr>
+           <td>Iнн ф.В, А</td>
+           <td>9999</td>
+       </tr>
+       <tr>
+           <td>Ток. Нагр. ВН ф.В, %</td>
+           <td>9999</td>
+       </tr>
+   </table>
+    <div class="buttons-2">
+        <a href="#" class="button">Вводы</a>
+        <a href="#" class="button">Частичные разряды</a>
+        <a href="#" class="button">Изоляция</a>
+        <a href="#" class="button">Газо-влагосодержание</a>
+        <a href="#" class="button">Система охлаждения</a>
+        <a href="#" class="button">Тренды</a>
+    </div>
+</div>
+</body>
+</html>
